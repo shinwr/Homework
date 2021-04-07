@@ -1,3 +1,39 @@
+* {
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 550;
+    color: black;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 800px;
+    border-style: solid;
+    border-color: deeppink;
+    background-color: hsla(328, 100%, 54%, 0.2);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px 20px;
+
+
+
+}
+
 body {
-    color:blue;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: cornsilk;
+}
+
+.write {
+    width: 400px;
+    border-style: solid;
+    border-color: rgb(117, 211, 255);
+    background-color: hsla(328, 100%, 54%, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 220px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }

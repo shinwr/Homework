@@ -9,5 +9,6 @@ def result(request):
     total_len = len(text)
     total_text = text
     total_except = len(text.replace(' ', ''))
+    word = len(text.split(' '))
 
-    return render(request, 'result.html', {'total_len' : total_len, 'total_text': text, 'total_except': len(text.replace(' ', '')), })
+    return render(request, 'result.html', {'total_len' : total_len, 'total_text': text, 'total_except': len(text.replace(' ', '')), 'word':len(text.split(' ')), })

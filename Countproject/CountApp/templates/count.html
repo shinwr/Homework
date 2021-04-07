@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'count.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>글자를 입력해 보세요!</h1>
-    <form action="{% url 'result' %}" method= "post">{% csrf_token %}
-        <textarea name="text" id="" cols="30" rows="10"></textarea> 
-        <br>
-        <input type="submit" value="제출">
-    </form>
+    <div class = "container">
+        <h1>글자를 입력해 보세요!</h1>
+        <form action="{% url 'result' %}" method= "post">{% csrf_token %}
+            <textarea name="text" id="" cols="30" rows="10"></textarea> 
+            <br>
+            <input type="submit" value="제출이라는 것을 해 보아요">
+        </form>
+    </div>
 </body>
 </html>
