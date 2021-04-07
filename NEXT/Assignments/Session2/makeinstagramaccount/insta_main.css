@@ -1,0 +1,161 @@
+.outside {
+    width: 630px;
+    height: 1120px;
+    border-color: azure;
+}
+
+.top_id_container img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.top_id_container {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.profile_photo img{
+    border-radius: 200px;
+    width: 140px;
+    height: 140px;
+    margin-right: 50px;
+}
+
+
+.second_line {
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info {
+    align-items: center;
+}
+
+.num {
+    font-weight: 600;
+    font-size: 25px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.txt {
+    font-weight: 480;
+    font-size: 20px;
+}
+
+.name {
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.self {
+    line-height: 1.4;
+    font-size: 17px;
+}
+
+.bar1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.follow {
+    border-style: solid;
+    border-color: #3a87c5;
+    background-color: #3a87c5;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    width: 290px;
+    height: 26px;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin: 28px 10px;
+
+}
+
+.message {
+    border-style: solid;
+    border-color: lightgray; 
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    width: 290px;
+    height: 26px;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin: 28px 10px;
+
+}
+
+.Bottom img {
+    width: 20px;
+    height: 20px;
+}
+
+.Bottom {
+    border-style: solid;
+    border-color: lightgray; 
+    width: 40px;
+    height: 26px;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin: 28px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+
+
+.bar2 img {
+    width: 60px;
+    height: 60px;
+}
+
+.container img{
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom_bar {
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom_bar img {
+    width: 40px;
+    height: 40px;
+}

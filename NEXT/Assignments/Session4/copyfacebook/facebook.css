@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    width : 375px;
+    height : 812px;
+}
+
+.bar1 {
+    width: 375px;
+    height : 40px;
+    background-color: #3B5998;
+    padding: 0px 4px;
+    border-style: solid;
+    border-color: #3B5998;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.bar1 i {
+    width : 20px;
+    height : 20px;
+}
+
+.bar1 p {
+    text-size: 14px;
+    color: #c4d2e7;
+    border-width: 259px;
+    border-style: solid;
+    border-bottom-color: white;
+}
+
+.bar2 {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bar2 i {
+    width: 20px;
+    height : 20px;
+    margin: 10px 21.25px;
+}
+
+
+
+.bar3 {
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: whitesmoke;
+    padding-left: 10px;
+}
+
+.me {
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.story_bar1 {
+
+}
+
+.box1 {
+    font-size: 14px;
+}
+
+
+.story_box1 {
+    width: 160px;
+    height: 90px;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 0;
+    background-image: url("imgfiles/defaultproflie.jpg");
+}
+
+.story_box2 {
+    width: 160px;
+    height: 90px;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 0;
+    background-image: url("imgfiles/주단태\ 스토리.png");
+}
+
+.story_box3 {
+    width: 160px;
+    height: 90px;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 0;
+    background-image: url("imgfiles/송중기스토리.jpg");
+}
+
+.story_box4 {
+    width: 160px;
+    height: 90px;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 0;
+    background-image: url("imgfiles/장도연\ 스토리.png");
+}
+
+
+.story_box1 img {
+    width: 32px;
+    height: 32px;
+    border-radius: 45px;
+    border-style: solid;
+    border-width: 4px;
+    border-color:#3578e5;
+}
+
+.mystory {
+    font-size: 12px;
+    color: white;
+}
