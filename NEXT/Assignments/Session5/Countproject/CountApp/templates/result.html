@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "write">그대가 입력하신 텍스트의...</div>
+
+    <div class = "box">
+        <p>글자수는: {{total_len}}</p>
+        <p>입력한 텍스트는: {{total_text}}</p>
+        <p>공백 제외 글자수는: {{total_except}}</p>
+        <p>단어수는: {{word}}</p>
+    </div>
+</body>
+</html>
