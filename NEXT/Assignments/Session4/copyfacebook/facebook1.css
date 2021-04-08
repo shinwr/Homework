@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    width : 375px;
+    height : 812px;
+}
+
+.bar1 {
+    width: 375px;
+    height : 40px;
+    background-color: #3B5998;
+    padding: 0px 4px;
+    border-style: solid;
+    border-color: #3B5998;
+
+    display: flex;
+    justify-content:space-between;
+}
+
+.bar1 i {
+    width : 30px;
+    height : 30px;
+    margin: 10px;
+    color:white;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar1 p {
+    font-size: 14px;
+    color: #c4d2e7;
+    border-width: 259px;
+    border-style: solid;
+    border-bottom-color: white;
+}
+
+.bar2 {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bar2 i {
+    width: 20px;
+    height : 20px;
+    margin: 10px 21.25px;
+}
+
+
+
+.bar3 {
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: white;
+    padding: 10px;
+    border-color: lightgray;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-width: 3px;
+    border-bottom-width: 7px;
+}
+
+.me {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.me img{
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 15px;
+}
+
+.me i {
+    width: 40px;
+    height: 40px;
+}
+
+.bar3 figcaption {
+    font-size: 10px;
+    color:darkgray;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.thought {
+    border-style: solid;
+    border-radius: 15px;
+    border-color: lightgray;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+/* .story_bar1 {
+    width: 361px;
+    height: 18px;
+    padding: 8px 5px 8px 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2 {
+    margin-left: 150px;
+}
+
+.story_box {
+    width: 378px;
+    height: 174px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.story_box1 {
+    width: 90px;
+    height: 160px;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 0;
+    background-image: url("imgfiles/defaultproflie.jpg");
+}
+
+.story_box2 {
+    position: relative;
+    display: flex;
+    width: 90px;
+    height: 160px;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 0;
+    background-image: url("imgfiles/주단태\ 스토리.png");
+}
+
+.story_box3 {
+    position: relative;
+    display: flex;
+    width: 90px;
+    height: 160px;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 0;
+    background-image: url("imgfiles/송중기스토리.jpg");
+}
+
+.story_box4 {
+    position: relative;
+    display: flex;
+    width: 90px;
+    height: 160px;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 0;
+    background-image: url("imgfiles/장도연\ 스토리.png");
+}
+
+
+.story_box1 img {
+    width: 32px;
+    height: 32px;
+    border-radius: 45px;
+    border-style: solid;
+    border-width: 4px;
+    border-color:#3578e5;
+}
+
+.mystory {
+    font-size: 12px;
+    color: white;
+} */
+
+.top {
+    display: flex;
+    
+}
+
+.writer {
+    width: 354px;
+    height: 40px;
+    display:inline-block;
+}
+
+.writer_photo img {
+    width: 60px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 15px;
+    float:left;
+}
+
+.writer_info {
+    float: left;
+    width: 294px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.writer_time {
+    font-size: 16px;
+    font-weight: 600;
+    color:lightslategray
+
+}
+
+.foto {
+    width: 374px;
+    height: 274px;
+}
+
+.foto img {
+    width: 374px;
+    height: 274px;
+}
+
+.article {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+p1 {
+    font-weight: 500;
+}
+
+p2 {
+    margin-top: 5px;
+    color: rgb(69, 116, 145);
+    font-weight: 700;
+}
+
+.reacts img {
+    margin-top: 9px;
+    width: 50px;
+    height: 18px;
+}
+
+.comments {
+    margin-top: 9px;
+    height: 18px;
+    margin-left: 80px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 15px;
+    color: gray;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+    border-bottom-width : 2px;
+    padding-bottom: 5px;
+}
+
+.bottom_box img {
+    width: 20px;
+    height: 20px;
+}
+
+.bottom_box {
+    width: 124px;
+    height: 30px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.bottom2 {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+    border-bottom-width : 5px;
+}
