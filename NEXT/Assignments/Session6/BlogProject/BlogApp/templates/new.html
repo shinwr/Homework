@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css'%}" />
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">    
+    <title>NEW</title>
+</head>
+<body>
+    <form action="" method="post">
+        {%csrf_token %}
+        <input name="title" placeholder="제목을 입력하세요">
+        <br>
+        <select name="category" id="">
+            <option value="drama">DRAMA</option>
+            <option value="movie">MOVIE</option>
+            <option value="programming">PROGRAMMING</option>
+        </select>
+        <textarea name="content" cols="50" rows="10" placeholder="내용을 입력하세요"></textarea>
+        <button type="submit">저장하기</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css'%}" />
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <title>DRAMA</title>
+</head>
+<body>
+    <h5>DRAMA</h5>
+    <ul>
+        {% for article in articles %}
+        <li>
+          <a href="{% url 'detail' article.pk %}">{{article.title}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+</body>
+</html>
