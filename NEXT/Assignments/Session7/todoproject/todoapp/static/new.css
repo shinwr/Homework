@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+html {
+    font-family: 'Nanum Gothic Coding', monospace;
+    color: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,5,84,1) 0%, rgba(121,9,109,1) 47%, rgba(0,189,255,1) 100%);
+}
+
+.wrapper {
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+.box {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.box input {
+    background-color: beige;
+    border-radius: 5px;
+    height: 24px;
+    width: 400px;
+}
+
+.box textarea {
+    width: 400px;
+    margin-left: 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+
+button {
+    background-color: white;
+    font-family: 'Nanum Gothic Coding', monospace;
+    padding: 8px;
+    height: 40px;
+    width: 80px;
+    border-radius: 8px;
+}
+
+placeholder {
+    font-family: 'Nanum Gothic Coding', monospace;
+}
