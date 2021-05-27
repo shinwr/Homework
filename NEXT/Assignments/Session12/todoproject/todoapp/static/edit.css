@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+html {
+    font-family: 'Nanum Gothic Coding', monospace;
+    color: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.7) 0%, rgba(31,5,84,0.7) 0%, rgba(121,9,109,0.7) 47%, rgba(0,189,255,0.7) 100%);
+}
+
+.wrapper {
+    color: white;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color:bisque;
+}

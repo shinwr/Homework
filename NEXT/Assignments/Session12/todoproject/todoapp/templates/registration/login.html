@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block wrapper %} 
+    <h1> LOGIN </h1>
+
+    {% if error %}
+    <h3 style="color: red;">{{ error }}</h3>
+    {% endif %}
+    
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="아이디">
+        <input type="password" name="password" placeholder="비밀번호">
+        <button type="submit">LOGIN</button>
+    </form>
+{% endblock %}

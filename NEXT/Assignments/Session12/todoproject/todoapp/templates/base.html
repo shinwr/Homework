@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    {% load socialaccount %}
+    {% providers_media_js %}
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+    {% block css %} 
+    {% endblock %} 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoHome</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <button id="menuButton">HIDE MENU</button>
+                <div id="dropdown">
+                    <a class="nav-item" href="{% url 'home' %}" >HOME</a>
+                    <a class="nav-item" href="{% url 'new' %}" >ADD</a>
+
+                    {% if user.is_authenticated %}
+                    <a class="nav-item">HI, {{ user.username }} </a>
+                    <a class="nav-item" href="{% url 'mypage' %}" >My Page</a>
+                    <a class="nav-item" href="{% url 'logout' %}" >LOGOUT</a>
+                    {% else %}
+                    <a class="nav-item" href="{% url 'login' %}" >LOGIN</a>
+                    <a class="nav-item" href="{% provider_login_url 'kakao' %}" >KAKAO LOGIN</a>              
+                    <a class="nav-item" href="{% url 'signup' %}" >SIGN UP</a>
+                    {% endif %}
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+
+    <div class= "wrapper">
+        {% block wrapper %} 
+
+        {% endblock %} 
+    </div>
+
+    <script type="text/javascript">
+
+        var button = document.querySelector("#menuButton");
+        var menu = document.querySelector("#dropdown");
+        
+        button.addEventListener("click", function(event) {
+            if (menu.style.display =="flex") {
+                console.log(menu.style.display);
+                menu.style.display = "none";
+                button.innerHTML = "SHOW MENU";
+            } else {
+                console.log(menu.style.display);
+                menu.style.display = "flex";
+                button.innerHTML = "HIDE MENU"; 
+            }
+        });
+
+    </script>
+
+</body>
+</html>

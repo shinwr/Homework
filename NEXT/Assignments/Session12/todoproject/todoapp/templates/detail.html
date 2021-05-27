@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+{% block css %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}">
+{% endblock %}
+
+{% block wrapper %}
+<div class="stuff">
+    <h2>할 일</h2>
+    <p>{{ post.title }}</p>
+</div>
+
+<div class="content">
+    <h2>내용</h2>
+    <p>{{ post.content }}</p>
+</div>
+
+<div class="due">
+    <h2>마감 기한</h2>
+    <p>{{ post.due }}</p>
+</div>
+
+<a href="{% url 'home' %}">홈으로</a>
+{% if user.is_authenticated and post.author.pk == user.pk %}
+<a href="{% url 'edit' post.pk %}">수정하기</a>
+<a href="{% url 'delete' post.pk %}">삭제하기</a>
+{% endif %}
+
+{% if user.is_authenticated %}
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="content" placeholder="댓글을 입력해주세요">
+    <button type="submit">댓글 쓰기</button>
+</form>
+{% endif %}
+
+{% for comment in post.comments.all %}
+<li>{{ comment.author.username }} : {{ comment.content }}</li>
+    {% if user.is_authenticated and comment.author.pk == user.pk %}
+    <a href="{% url 'delete_comment' post.pk comment.pk %}">삭제</a>
+    {% endif %}
+{% endfor %}
+
+<script>
+    
+</script>
+
+{% endblock %}

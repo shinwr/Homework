@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+html {
+    font-family: 'Nanum Gothic Coding', monospace;
+    color: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.7) 0%, rgba(31,5,84,0.7) 0%, rgba(121,9,109,0.7) 47%, rgba(0,189,255,0.7) 100%);
+}
+
+.wrapper {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color:aqua;
+}
+
+.title {
+    background-color: hsla(48, 100%, 93%, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    margin-left: 210px;
+    margin-right: 210px;
+    height: 100px;
+    width: 300px;
+
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+.list {
+    background-color: hsla(48, 100%, 93%, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 10px;
+    height: 90%;
+    width: 700px;
+}
+
+ul {
+    padding-left: 40px;
+    line-height: 30px;
+}
+
+.wrapper > a {
+    background-color: hsla(48, 100%, 93%, 0.2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    margin-left: 210px;
+    margin-right: 210px;
+    height: 50px;
+    width: 200px;
+    padding-left: 40px;
+
+}
