@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex1.css">
+    <title>Awesome</title>
+</head>
+<body>
+    <div id="myDIV" class="header">
+        <div class="tooltip"><h2>TO DO LIST</h2>
+            <span class="tooltiptext">할많하않: 할 일은 많지만 하지는 않겠다</span>
+        </div>
+    
+        <div class="inputBox">
+            <input type="text" id="myInput" placeholder="할 일을 입력하세요">
+            <button onclick="newElement()" class="addBtn">Add</button>
+        </div>
+    </div>
+      
+    <ul id="myUL">
+        <li>
+            <span>Happy Coding :)</span>
+            <span class="close">&#215;</span>
+        </li>
+    </ul>
+
+    <button id="myBtn">잠깐!</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="https://pds.joins.com/news/component/htmlphoto_mmdata/201911/15/204986cb-6c18-4c07-b7ec-964029adfa49.jpg">
+            <p>할 건 많지만 갑자기 코알라가 귀여워져서..</p>
+        </div>
+    </div>
+
+    
+</body>
+<script src="ex1.js"></script>
+</html>
